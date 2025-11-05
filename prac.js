@@ -39,6 +39,8 @@ var reduce = function(nums, fn, init) {
     }
     return init
 };
+/*Iterate through array, using init as accumulator, each output of function is 
+set to init so the value is saved and updated with each loop.*/
 
 //2629. Function Composition
 var compose = function(functions) {
@@ -59,4 +61,4 @@ var compose = function(functions) {
 as the outer function's input. So we iterate through the array in reverse, then call the function
 with the given input and reinitialize x as that input for the next function in the array. Not too
 difficult to get but alternate solution that is commented is a bit harder to understand. Uses
-reduceRight() function.
+reduceRight() function.*/
