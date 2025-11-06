@@ -61,4 +61,11 @@ var compose = function(functions) {
 as the outer function's input. So we iterate through the array in reverse, then call the function
 with the given input and reinitialize x as that input for the next function in the array. Not too
 difficult to get but alternate solution that is commented is a bit harder to understand. Uses
-reduceRight() function.*/
+reduceRight() function.
+
+Update: written out version of alternate solution makes much more sense:
+return function(x){
+         return functions.reduceRight((acc, f) => {
+            return f(acc)
+         }, x)
+    }*/
